@@ -3338,7 +3338,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: #f5f5f5; /* Backup solid grey just in case */
+		background-image: linear-gradient(to bottom right, #ffffff, #e6e6e6);
 		color: #636363;
 		border-radius: 0.25em;
 	}
