@@ -3685,6 +3685,37 @@ input, select, textarea {
 
 /* Footer */
 
+/* Custom Footer Colors */
+#footer, 
+#footer p, 
+#footer .copyright {
+    color: #002147 !important; /* Deep Oxford Blue for standard text */
+}
+
+#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6,
+#footer strong, #footer b {
+    color: #00122b !important; /* Slightly darker deep blue for headings and bold text */
+}
+
+#footer a {
+    color: #003366 !important; /* Deep blue for links */
+    border-bottom-color: rgba(0, 51, 102, 0.3) !important;
+}
+
+#footer a:hover {
+    color: #00509e !important; /* Lighter blue when hovering over links */
+    border-bottom-color: transparent !important;
+}
+
+#footer .icon.alt {
+    color: #002147 !important; /* Deep blue for social icons */
+    border-color: rgba(0, 33, 71, 0.3) !important;
+}
+
+#footer .icon.alt:hover {
+    background-color: rgba(0, 33, 71, 0.1) !important;
+}
+
 	#footer {
 		display: -moz-flex;
 		display: -webkit-flex;
