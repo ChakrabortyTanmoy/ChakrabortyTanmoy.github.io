@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
 
 /*
 	Stellar by HTML5 UP
@@ -125,7 +125,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Open Sans", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -194,6 +194,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: "Lora", serif;
 		font-weight: 300;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
@@ -206,34 +207,34 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.5em;
+		font-size: calc(2.5em + 4pt);
 		line-height: 1.2;
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: calc(1.5em + 4pt);
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: calc(1.25em + 4pt);
 	}
 
 	h4 {
-		font-size: 1.1em;
+		font-size: calc(1.1em + 4pt);
 	}
 
 	h5 {
-		font-size: 0.9em;
+		font-size: calc(0.9em + 4pt);
 	}
 
 	h6 {
-		font-size: 0.7em;
+		font-size: calc(0.7em + 4pt);
 	}
 
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 2em;
+			font-size: calc(2em + 4pt);
 		}
 
 	}
@@ -2641,7 +2642,7 @@ input, select, textarea {
 	}
 
 		header.major h2 {
-			font-size: 2em;
+			font-size: calc(2em + 4pt);
 		}
 
 			header.major h2:after {
@@ -2683,7 +2684,7 @@ input, select, textarea {
 		}
 
 			header.major h2 {
-				font-size: 1.5em;
+				font-size: calc(1.5em + 4pt);
 			}
 
 			header.major p {
@@ -3090,7 +3091,7 @@ input, select, textarea {
 		}
 
 			#header.alt h1 {
-				font-size: 3.25em;
+				font-size: calc(3.25em + 4pt);
 			}
 
 			#header.alt > * {
@@ -3168,7 +3169,7 @@ input, select, textarea {
 				}
 
 					#header.alt h1 {
-						font-size: 2.5em;
+						font-size: calc(2.5em + 4pt);
 					}
 
 		}
@@ -3290,6 +3291,8 @@ input, select, textarea {
 					border: 0;
 					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
+					font-family: "Merriweather", serif;
+					font-size: calc(1em + 4pt);
 				}
 
 					#nav ul li a:hover {
@@ -3316,7 +3319,7 @@ input, select, textarea {
 			}
 
 				#nav.alt ul li a {
-					font-size: 0.9em;
+					font-size: calc(0.9em + 4pt);
 				}
 
 		@media screen and (max-width: 736px) {
