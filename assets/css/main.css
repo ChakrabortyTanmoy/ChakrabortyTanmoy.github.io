@@ -3834,12 +3834,16 @@ input, select, textarea {
 }
 
 /* Individual Logo Styles */
-.logo-left, .logo-right {
-    /* CHANGED: Increased from 80px. Change this number to 
-       make both logos exactly as large or as small as you need. */
-    height: 120px; 
+.logo-left {
+    height: 160px; /* Increase this number to make the LEFT logo bigger */
     width: auto;
 }
+
+.logo-right {
+    height: 90px; /* Decrease this number to make the RIGHT logo smaller */
+    width: auto;
+}
+
 
 /* Optional: If you want to force specific spacing */
 .logo-left {
