@@ -3832,17 +3832,17 @@ input, select, textarea {
 
 /* Individual Logo Styles */
 .logo-left, .logo-right {
-    height: 80px; /* Adjust this height to match your desired logo size */
+    height: 60px; /* Adjust this height to match your desired logo size */
     width: auto;
 }
 
 /* Optional: If you want to force specific spacing */
 .logo-left {
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 .logo-right {
-    margin-right: 2em;
+    margin-right: 1em;
 }
 
 /* Responsive adjustment for smaller screens */
@@ -3852,4 +3852,25 @@ input, select, textarea {
         flex-direction: column;
         gap: 1em;
     }
+}
+
+
+/* --- FULL SCREEN WIDTH FOR MAIN CONTENT --- */
+
+#wrapper {
+    max-width: 100% !important; /* Allows the entire site container to span the screen */
+    width: 100% !important;
+    padding: 0 !important; /* Removes default side spacing */
+}
+
+#main {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0 !important; /* Removes rounded corners so it sits perfectly flush with the screen edges */
+}
+
+/* Optional: Prevents your text from stretching edge-to-edge on large monitors */
+#main > .main {
+    max-width: 75em; 
+    margin: 0 auto; 
 }
