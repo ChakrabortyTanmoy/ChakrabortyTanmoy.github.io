@@ -3826,13 +3826,18 @@ input, select, textarea {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 4em; /* Adjust this to change the margin from the screen edges */
+    /* CHANGED: The first number (3em) controls top/bottom space. 
+       The second number (4em) controls left/right margins. 
+       Increase '3em' to '4em' or '5em' for even more vertical space. */
+    padding: 3em 4em; 
     box-sizing: border-box;
 }
 
 /* Individual Logo Styles */
 .logo-left, .logo-right {
-    height: 60px; /* Adjust this height to match your desired logo size */
+    /* CHANGED: Increased from 80px. Change this number to 
+       make both logos exactly as large or as small as you need. */
+    height: 120px; 
     width: auto;
 }
 
