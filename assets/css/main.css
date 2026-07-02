@@ -3908,3 +3908,14 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, ul, li, dt, dd, .content, .major {
     flex-wrap: wrap !important;
     width: 100% !important;
 }
+
+
+/* --- FIX CAMOUFLAGED MOBILE MENU --- */
+#titleBar, #titleBar *, #navPanel, #navPanel * {
+    color: #ffffff !important; 
+}
+
+/* Ensure the background of the slide-out panel stays dark */
+#navPanel {
+    background: #1a1a1a !important; 
+}
