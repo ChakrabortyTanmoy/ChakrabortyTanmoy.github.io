@@ -1,4 +1,9 @@
 <!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
 		<title>Research - NeQsus Lab</title>
@@ -7,7 +12,16 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* CSS to ensure the left-side images look consistent and beautiful */
+			/* CSS to ensure left-side alignment for headings */
+			.align-left {
+				text-align: left !important;
+			}
+			/* This ensures the decorative line under the main header aligns to the left too */
+			header.major.align-left::after {
+				margin-left: 0 !important;
+			}
+
+			/* CSS for consistent image formatting */
 			.theme-image {
 				width: 100%;
 				height: auto;
@@ -15,12 +29,15 @@
 				box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle professional shadow */
 				margin-bottom: 2em;
 			}
+			
 			/* Adds spacing between each research theme */
 			.research-theme-block {
 				margin-bottom: 4em;
 				padding-bottom: 4em;
 				border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+				align-items: center; /* Vertically centers the text with the image */
 			}
+			
 			/* Removes the border from the very last theme */
 			.research-theme-block:last-child {
 				margin-bottom: 0;
@@ -31,17 +48,22 @@
 	</head>
 	<body class="is-preload">
 
-		<div id="wrapper">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-				<header id="header" class="alt">
+				<!-- Header with Dual Logos -->
+					<header id="header" class="alt">
 						<div class="logo-container">
+							<!-- Left Logo -->
 							<img src="images/logo.png" alt="Lab Logo" class="logo-left" />
+							<!-- Right Logo -->
 							<img src="images/Name_research.png" alt="Research Logo" class="logo-right" />
 						</div>
 						<h1></h1>
 					</header>
 
-				<nav id="nav">
+				<!-- Nav -->
+					<nav id="nav">
 						<ul>
 							<li><a href="index.html">About</a></li>
 							<li><a href="research.html" class="active">Research</a></li>
@@ -52,59 +74,76 @@
 						</ul>
 					</nav>
 
-				<div id="main">
+				<!-- Main Content Area -->
+					<div id="main">
 
-						<section class="main">
-								<header class="major">
+						<!-- Research Themes Section -->
+							<section class="main">
+								<header class="major align-left">
 									<h2>Research themes</h2>
 								</header>
 
+								<!-- Theme 1: Single photon sources -->
 								<div class="row research-theme-block">
+									<!-- Left Side: Image -->
 									<div class="col-6 col-12-medium">
 										<img src="images/Photon_sources.png" alt="Single photon sources" class="theme-image" />
 									</div>
+									<!-- Right Side: Text -->
 									<div class="col-6 col-12-medium">
-										<h3><a href="generic.html">Single photon sources</a></h3>
+										<h3 class="align-left"><a href="generic.html">Single photon sources</a></h3>
 										<p>Single photons act as essential information carriers in quantum networks, traveling through fiber links. Simultaneously, entangled photon pairs deliver the vital quantum correlations required for secure key distribution and teleportation between distant nodes.</p>
 									</div>
 								</div>
 
+								<!-- Theme 2: Quantum memory based on rare earth ions -->
 								<div class="row research-theme-block">
+									<!-- Left Side: Image -->
 									<div class="col-6 col-12-medium">
 										<img src="images/Q_memory.png" alt="Quantum memory based on rare earth ions" class="theme-image" />
 									</div>
+									<!-- Right Side: Text -->
 									<div class="col-6 col-12-medium">
-										<h3><a href="generic.html">Quantum memory based on rare earth ions</a></h3>
+										<h3 class="align-left"><a href="generic.html">Quantum memory based on rare earth ions</a></h3>
 										<p>Rare-earth ions act as highly efficient quantum memories due to their exceptionally long coherence times. They enable the critical storage and synchronized retrieval of photons necessary to bridge distant nodes in scalable quantum networks.</p>
 									</div>
 								</div>
 
+								<!-- Theme 3: Quantum imaging and metrology -->
 								<div class="row research-theme-block">
+									<!-- Left Side: Image -->
 									<div class="col-6 col-12-medium">
 										<img src="images/Imaging_metrology.png" alt="Quantum imaging and metrology" class="theme-image" />
 									</div>
+									<!-- Right Side: Text -->
 									<div class="col-6 col-12-medium">
-										<h3><a href="generic.html">Quantum imaging and metrology</a></h3>
+										<h3 class="align-left"><a href="generic.html">Quantum imaging and metrology</a></h3>
 										<p>Quantum imaging and metrology harness the strict spatial and spectral correlations of entangled photon pairs. By utilizing coincidence detection, these techniques dramatically suppress background noise and achieve phase sensitivity far surpassing classical limits.</p>
 									</div>
 								</div>
 
+								<!-- Theme 4: Hybrid quantum network -->
 								<div class="row research-theme-block">
+									<!-- Left Side: Image -->
 									<div class="col-6 col-12-medium">
 										<img src="images/Hybrid_network.png" alt="Hybrid quantum network" class="theme-image" />
 									</div>
+									<!-- Right Side: Text -->
 									<div class="col-6 col-12-medium">
-										<h3><a href="generic.html">Hybrid quantum network</a></h3>
+										<h3 class="align-left"><a href="generic.html">Hybrid quantum network</a></h3>
 										<p>Hybrid quantum networks seamlessly integrate distinct physical platforms, like telecom photons for transmission and rare-earth ions for storage. This synergy leverages their unique strengths to build scalable, robust architectures for global quantum communication.</p>
 									</div>
 								</div>
 
+								<!-- Theme 5: Atomic defect centers in diamond -->
 								<div class="row research-theme-block">
+									<!-- Left Side: Image -->
 									<div class="col-6 col-12-medium">
 										<img src="images/defect_diamond.png" alt="Atomic defect centers in diamond" class="theme-image" />
 									</div>
+									<!-- Right Side: Text -->
 									<div class="col-6 col-12-medium">
-										<h3><a href="generic.html">Atomic defect centers in diamond</a></h3>
+										<h3 class="align-left"><a href="generic.html">Atomic defect centers in diamond</a></h3>
 										<p>Atomic defect centers in diamond offer robust stationary qubits for advanced quantum processing. Applying precise optical and microwave pulses enables the high-fidelity initialization, coherent manipulation, and accurate readout of these highly stable spin states.</p>
 									</div>
 								</div>
@@ -113,13 +152,15 @@
 
 					</div>
 
-				<footer id="footer">
+				<!-- Clean Footer -->
+					<footer id="footer">
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
 
-		<script src="assets/js/jquery.min.js"></script>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
