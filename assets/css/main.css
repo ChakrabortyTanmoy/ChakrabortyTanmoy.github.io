@@ -3909,6 +3909,29 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, ul, li, dt, dd, .content, .major {
     width: 100% !important;
 }
 
+/* --- FIX CAMOUFLAGED MOBILE HAMBURGER MENU --- */
+#titleBar {
+    display: block !important; /* Ensures the bar is visible */
+}
+
+/* This targets the little 3-line hamburger icon and makes it white */
+#titleBar .toggle, 
+#titleBar .toggle:before,
+#titleBar * {
+    color: #ffffff !important; 
+}
+
+/* This makes sure the slide-out panel and its text are also visible */
+#navPanel {
+    background-color: #1a1a1a !important; 
+}
+
+#navPanel .link, 
+#navPanel a, 
+#navPanel * {
+    color: #ffffff !important; 
+    text-decoration: none !important;
+}
 
 /* --- FIX CAMOUFLAGED MOBILE MENU --- */
 #titleBar, #titleBar *, #navPanel, #navPanel * {
