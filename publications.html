@@ -1,117 +1,245 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Publications - NeQsus Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* CSS to ensure left-side alignment for headings */
+			.align-left {
+				text-align: left !important;
+			}
+			header.major.align-left::after {
+				margin-left: 0 !important;
+			}
+
+			/* Publication List Formatting */
+			.pub-list {
+				padding-left: 1.5em;
+				margin-top: 2em;
+			}
+			.pub-list li {
+				margin-bottom: 2em;
+				line-height: 1.6;
+				font-weight: normal !important; /* Removes all bold fonts */
+			}
+			
+			/* Title formatting (Blue, no underline) */
+			.pub-title {
+				color: #0033a0 !important;
+				text-decoration: none !important;
+				border-bottom: none !important;
+				display: inline-block;
+				margin-bottom: 0.3em;
+				font-size: 1.05em;
+			}
+			.pub-title:hover {
+				color: #8a2be2 !important; /* Transitions to purple on hover */
+			}
+			
+			/* Author and Journal formatting */
+			.pub-authors {
+				display: block;
+				margin-bottom: 0.1em;
+				color: #222222;
+			}
+			.pub-journal {
+				display: block;
+				color: #444444;
+			}
+			
+			/* Extra notes like [Selected as journal cover] */
+			.pub-notes {
+				display: block;
+				color: #555555;
+				font-size: 0.9em;
+				margin-top: 0.3em;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-<header id="header" class="alt">
-    <div class="logo-container">
-        <img src="images/logo.png" alt="Research Logo" class="logo-left" />
-        <img src="images/Name_research.png" alt="Lab Logo" class="logo-right" />
-    </div>
-    <h1></h1>
-</header>
+				<header id="header" class="alt">
+						<div class="logo-container">
+							<img src="images/logo.png" alt="Lab Logo" class="logo-left" />
+							<img src="images/Name_research.png" alt="Research Logo" class="logo-right" />
+						</div>
+						<h1></h1>
+					</header>
 
+				<nav id="nav">
+						<ul>
+							<li><a href="index.html">About</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="publications.html" class="active">Publications</a></li>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="news.html">Updates</a></li>
+							<li><a href="opportunities.html">Opportunities</a></li>
+						</ul>
+					</nav>
 
-				<!-- Nav -->
-					<nav id="nav">
-	<ul>
-		<li><a href="index.html">About</a></li>
-		<li><a href="research.html">Research</a></li>
-		<li><a href="publications.html">Publications</a></li>
-		<li><a href="team.html">Team</a></li>
-		<li><a href="news.html">Updates</a></li>
-		<li><a href="opportunities.html">Opportunities</a></li>
-	</ul>
-</nav>
+				<div id="main">
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
-										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-								</div>
-							</section>
-
-						
-
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+						<section class="main">
+								<header class="major align-left">
+									<h2>List of journal publications</h2>
 								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
 
-						
+								<ol class="pub-list">
+									<li>
+										<a href="https://doi.org/10.1038/s41534-025-01119-5" target="_blank" class="pub-title">Hybrid Quantum Repeaters with Ensemble-based Quantum Memories and Single-spin Photon Transducers</a>
+										<span class="pub-authors">F. Gu, S. G Menon, D. Maier, A. Das, T. Chakraborty, W. Tittel, H. Bernien, J. Borregaard</span>
+										<span class="pub-journal">npj Quantum Inf. 11(1), 182 (2025) [Nature Portfolio, UK].</span>
+									</li>
+									<li>
+										<a href="https://opg.optica.org/opticaq/fulltext.cfm?uri=opticaq-3-2-119" target="_blank" class="pub-title">Nonlinear interferometry-based metrology of magneto-optical properties at infrared wavelengths</a>
+										<span class="pub-authors">T. Chakraborty, T. Produit, H. N S Krishnamoorthy, C. Soci and A. V. Paterova</span>
+										<span class="pub-journal">Optica Quantum 3 (2), 119-128 (2025) [Optica Publishing Group]. [Selected as journal cover]</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1038/s41534-024-00946-2" target="_blank" class="pub-title">Towards a spectrally multiplexed quantum repeater</a>
+										<span class="pub-authors">T. Chakraborty, A. Das, H. van Brug, O. Pietx-Casas, P.-C. Wang, G. C. do Amaral, A. L. Tchebotareva, and W. Tittel</span>
+										<span class="pub-journal">npj Quantum Inf. 11 (1), 3 (2025) [Nature Portfolio, UK].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1002/qute.202400397" target="_blank" class="pub-title">Mid-infrared sensing using a Hollow-Core Fiber in a Nonlinear Interferometer</a>
+										<span class="pub-authors">T. Produit, T. Chakraborty, A. Deng, L. Krivitsky, W. Chang, A. V. Paterova</span>
+										<span class="pub-journal">Adv Quantum Technol. 2400397 (2024) [Wiley publisher].</span>
+									</li>
+									<li>
+										<a href="https://scholar.google.com/scholar?q=Qubit+teleportation+between+a+memory-compatible+photonic+time-bin+qubit+and+a+solid-state+quantum+network+node" target="_blank" class="pub-title">Qubit teleportation between a memory-compatible photonic time-bin qubit and a solid-state quantum network node</a>
+										<span class="pub-authors">M. Luliano, M.-C. Slater, A. J. Stolk, M. J. Weaver, T. Chakraborty, E. Loukiantchenko, G. C. do Amaral, N. Alfasi, M. O. Sholkina, W. Tittel, R. Hanson</span>
+										<span class="pub-journal">npj Quantum Inf. 10 (1), 107 (2024) [Nature Publishing, UK].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1021/acsanm.3c05491" target="_blank" class="pub-title">Photoluminescence of Germanium-Vacancy Centers in Nanocrystalline Diamond Films: Implications for Quantum Sensing Applications</a>
+										<span class="pub-authors">R. M. Joy, P. Pobedinskas, E. Bourgeois, T. Chakraborty, J. Görlitz, D. Herrmann, C. Noël, J. Heupel, D. Jannis, N. Gauquelin, J. D’Haen, J. Verbeeck, C. Popov, L. Houssiau, C. Becher, M. Nesládek, and K. Haenen</span>
+										<span class="pub-journal">ACS Appl. Nano Mater. 7 (4), 3873-3884 (2024) [American Chemical Society]. [Selected as journal cover]</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1016/j.sctalk.2023.100157" target="_blank" class="pub-title">Germanium vacancy centre formation in CVD nanocrystalline diamond using a solid dopant source</a>
+										<span class="pub-authors">R. M. Joy, P. Pobedinskas, E. Bourgeois, T. Chakraborty, J. Görlitz, D. Herrmann, C. Noël, J. Heupel, D. Jannis, N. Gauquelin, J. D’Haen, J. Verbeeck, C. Popov, L. Houssiau, C. Becher, M. Nesládek, and K. Haenen</span>
+										<span class="pub-journal">Science Talks, 5, 100157 (2023) [Elsevier].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1364/AO.487002" target="_blank" class="pub-title">Spectrally multiplexed Hong–Ou–Mandel interference with weak coherent states</a>
+										<span class="pub-authors">O. P.-Casas, G. C. Do Amaral, T. Chakraborty, R. Berrevoets, T. Middelburg, J. A. Slater, W. Tittel</span>
+										<span class="pub-journal">Appl. Opt. 62, 3284 (2023) [Optica Publishing Group].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1103/PhysRevApplied.17.024046" target="_blank" class="pub-title">Magnetic field-assisted spectral decomposition and imaging of charge states of NV centers in diamond</a>
+										<span class="pub-authors">T Chakraborty, R. Bhattacharya, V. S. Anjusha, M. Nesladek, D. Suter, T. S. Mahesh</span>
+										<span class="pub-journal">Phys. Rev. Appl. 17, 024046 (2022) [American Physical Society].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1103/PhysRevA.105.022622" target="_blank" class="pub-title">Optimization of a quantum control sequence for initializing an NV spin register</a>
+										<span class="pub-authors">T. Chakraborty, J. Zhang, D. Suter</span>
+										<span class="pub-journal">Phys. Rev. A 105, 022622 (2022) [American Physical Society].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1016/j.diamond.2021.108587" target="_blank" class="pub-title">Enhancement of concentration of XeV and GeV centers in nanocrystalline diamond through He+ irradiation</a>
+										<span class="pub-authors">T. Chakraborty, K. J. Sankaran, K. Srinivasu, R. Nongjai, K. Asokan, C. H. Chen, H. Niu, K. Haenen</span>
+										<span class="pub-journal">Diam. Relat. Mater. 10, 108587 (2021) [Elsevier].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1088/1361-648X/ab3962" target="_blank" class="pub-title">Magnetocaloric effect as a signature of quantum level-crossing for a spin-gapped system</a>
+										<span class="pub-authors">T. Chakraborty and C. Mitra</span>
+										<span class="pub-journal">J. Phys: Cond. Matter. 47, 475802 (2019) ‎[IOP Publishing‎ (UK)].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1103/PhysRevMaterials.3.065205" target="_blank" class="pub-title">CVD-growth of ultrapure diamond, generation of NV centers by ion-implantation, and their spectroscopic characterization for quantum technological applications</a>
+										<span class="pub-authors">T. Chakraborty, F. Lehmann, J. Zhang, N. Wöhrl, R. Remfort, S. Borgsdorf, U. Köhler, V. Buck and D. Suter</span>
+										<span class="pub-journal">Phys. Rev. Materials 3, 065205 (2019) [American Physical Society].</span>
+										<span class="pub-notes">[Press-release by Technical University of Dortmund, Ruhr-universiteit, Bochum and Universität Duisburg-Essen, Highlighted in the ‘Outline’ section of Nature: Nature 591 S38 (2021)]</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1088/1367-2630/aa7727" target="_blank" class="pub-title">Polarizing the electronic and nuclear spin of the NV-center in diamond in arbitrary magnetic fields: Analysis of the optical pumping process</a>
+										<span class="pub-authors">T. Chakraborty, J. Zhang, D. Suter</span>
+										<span class="pub-journal">New J. Phys. 19, 073030 (2017) ‎[IOP Publishing‎ (UK)].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1016/j.jmmm.2017.05.018" target="_blank" class="pub-title">Investigation of thermodynamic properties of Cu(NH3)4SO4·H2O, a Heisenberg spin chain compound</a>
+										<span class="pub-authors">T. Chakraborty, H.Singh, D. Chaudhuri, H. S. Jeevan, P. Gegenwart and C. Mitra</span>
+										<span class="pub-journal">J. Magn. Magn. Mater. 439, 101-106 (2017) [Elsevier].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1016/j.jmmm.2015.08.053" target="_blank" class="pub-title">Experimental evidences of singlet to triplet transition in a spin cluster compound</a>
+										<span class="pub-authors">T. Chakraborty, H. Singh and C. Mitra</span>
+										<span class="pub-journal">J. Magn. Magn. Mater. 396, 247-253 (2015) [Elsevier].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1007/s11128-014-0888-0" target="_blank" class="pub-title">Experimental estimation of discord in an antiferromagnetic Heisenberg compound Cu(NO3)2 ∙2.5 H2O</a>
+										<span class="pub-authors">H. Singh, T. Chakraborty, P. Panigrahi, C. Mitra</span>
+										<span class="pub-journal">Quantum Inf. Process. 14, 951-961 (2015) [Springer Nature].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1016/j.physb.2014.04.019" target="_blank" class="pub-title">Study of exchange bias in NiCr2O4 nanoparticles</a>
+										<span class="pub-authors">H. Singh, T. Chakraborty, K. Srikanth, R. Chandra, C. Mitra, U. Kumar</span>
+										<span class="pub-journal">Physica B: Condensed Matter 448, 77-79 (2014) [Elsevier].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1109/TMAG.2014.2323332" target="_blank" class="pub-title">Study of Exchange Bias in All Ferromagnetic Fe/Co Soft/Hard Bilayer</a>
+										<span class="pub-authors">H. Singh, R.Gupta, T. Chakraborty, A. Gupta, C. Mitra</span>
+										<span class="pub-journal">IEEE Trans. Magn. 50(9), 4800204 (2014) [IEEE Xplore].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1007/s11051-014-2354-9" target="_blank" class="pub-title">A study of crossover from 3D ferrimagnetic bulk NiCr2O4 compound into 2D spin-glass-like nanophase</a>
+										<span class="pub-authors">H. Singh, T. Ono, T. Chakraborty, A. Venimadhav, R. C. Chandra, C. Mitra and U. Kumar</span>
+										<span class="pub-journal">J. Nanopart. Res. 16, 2354 (2014) [Springer Nature].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1088/1367-2630/15/11/113001" target="_blank" class="pub-title">Experimental quantification of entanglement through heat capacity</a>
+										<span class="pub-authors">H. Singh, T. Chakraborty, D. Das, J. Hirale, Y. Tokiwa, P. Gegenwart, and C. Mitra</span>
+										<span class="pub-journal">New J. Phys. 15, 113001 (2013) ‎[IOP Publishing‎ (UK)].</span>
+										<span class="pub-notes">[Highlighted in the 'Commentary' section of Nature Physics: Quantum entanglement, Vlatko Vedral, Nature Physics 10, 256 (2014)]</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1063/1.4862402" target="_blank" class="pub-title">Signature of quantum entanglement in NH4CuPO4•H2O</a>
+										<span class="pub-authors">T. Chakraborty, H. Singh, C. Mitra</span>
+										<span class="pub-journal">J. Appl. Phys. 115, 034909 (2014) [American Institute of Physics].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1063/1.4824369" target="_blank" class="pub-title">Experimental detection of thermal entanglement in a molecular chain</a>
+										<span class="pub-authors">T. Chakraborty, T. K. Sen, H. Singh, D. Das, S. K. Mandal, C. Mitra</span>
+										<span class="pub-journal">J. Appl. Phys. 114, 144904 (2013) [American Institute of Physics].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1088/0953-8984/25/42/425601" target="_blank" class="pub-title">Probing quantum discord in a Heisenberg dimer compound</a>
+										<span class="pub-authors">T. Chakraborty, H. Singh, S. Singh, R. K. Gopal, C. Mitra</span>
+										<span class="pub-journal">J. Phys: Cond. Matter. 25, 425601 (2013) ‎[IOP Publishing‎ (UK)].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1088/1367-2630/15/1/013047" target="_blank" class="pub-title">Experimental detection of quantum information sharing and its quantification in quantum spin systems</a>
+										<span class="pub-authors">D. Das, H. Singh, T. Chakraborty, C. Mitra</span>
+										<span class="pub-journal">New J. Phys. 15, 013047 (2013) ‎[IOP Publishing‎ (UK)].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1016/j.physleta.2012.09.023" target="_blank" class="pub-title">Quantification of entanglement from magnetic susceptibility for a Heisenberg spin ½ system</a>
+										<span class="pub-authors">T. Chakraborty, H. Singh, D. Das, T. K. Sen, C. Mitra</span>
+										<span class="pub-journal">Phys. Lett. A 376, 2967–2971 (2012) [Elsevier].</span>
+									</li>
+									<li>
+										<a href="https://doi.org/10.1016/j.ssc.2012.08.006" target="_blank" class="pub-title">Comparative study of magnetic behaviour in three classic molecular magnets</a>
+										<span class="pub-authors">T. Chakraborty, T. K. Sen, H. Singh, D. Das, S. K. Mandal, C. Mitra</span>
+										<span class="pub-journal">Solid State Commun. 152, 1945–1950 (2012) [Elsevier].</span>
+									</li>
+								</ol>
+
+							</section>
 
 					</div>
 
-				<!-- Footer -->
-	<footer id="footer">
-		<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-	</footer>
+				<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
