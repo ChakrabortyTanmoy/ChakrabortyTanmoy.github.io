@@ -3966,3 +3966,28 @@ body {
     background-image: none !important;
     background-color: transparent !important;
 }
+
+
+/* --- CUSTOM TEXT BANNER (REPLACING LOGOS) --- */
+#header .logo-container {
+    display: none !important; /* Failsafe to hide the old logos */
+}
+
+#header h1.site-title {
+    font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 3.5em !important; /* Big, commanding font size */
+    font-weight: 400 !important; /* Clean, modern academic weight */
+    color: #ffffff !important; /* Crisp white */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6) !important; /* Subtle shadow for readability over the image */
+    letter-spacing: 1px !important;
+    margin: 0 auto !important;
+    text-transform: none !important; 
+    border-bottom: none !important;
+}
+
+/* Make sure it scales down nicely on mobile phones */
+@media screen and (max-width: 736px) {
+    #header h1.site-title {
+        font-size: 2em !important;
+    }
+}
