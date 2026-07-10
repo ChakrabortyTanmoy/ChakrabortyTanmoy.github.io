@@ -3951,3 +3951,20 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, ul, li, dt, dd, .content, .major {
     background-color: #ffffff !important;
     background-image: none !important; /* This deletes hidden grey patterns/gradients */
 }
+
+
+/* --- TOPMOST COVER IMAGE (HEADER BACKGROUND) --- */
+#header {
+    background-image: url("../../images/Background.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Optional: Adds a slight dark overlay so your logos still stand out clearly against the new background */
+#header .logo-container {
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 1em;
+    border-radius: 10px;
+    display: inline-block;
+}
