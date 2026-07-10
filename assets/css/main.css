@@ -3952,19 +3952,17 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, ul, li, dt, dd, .content, .major {
     background-image: none !important; /* This deletes hidden grey patterns/gradients */
 }
 
-
-/* --- TOPMOST COVER IMAGE (HEADER BACKGROUND) --- */
-#header {
+/* --- FULL WEBPAGE BACKGROUND IMAGE --- */
+body {
     background-image: url("../../images/Background.png") !important;
     background-size: cover !important;
-    background-position: center !important;
+    background-position: center top !important;
     background-repeat: no-repeat !important;
+    background-attachment: fixed !important; /* This keeps the image anchored in place while you scroll down */
 }
 
-/* Optional: Adds a slight dark overlay so your logos still stand out clearly against the new background */
-#header .logo-container {
-    background-color: rgba(255, 255, 255, 0.7); 
-    padding: 1em;
-    border-radius: 10px;
-    display: inline-block;
+/* Ensure the header returns to being transparent so the background shows through */
+#header {
+    background-image: none !important;
+    background-color: transparent !important;
 }
