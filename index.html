@@ -4,7 +4,7 @@
 		<title>About - NeQsus Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=4" />
+		<link rel="stylesheet" href="assets/css/main.css?v=5" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.rri-block {
@@ -26,6 +26,34 @@
 			.email-link:hover {
 				color: #8a2be2 !important;
 			}
+			
+			/* --- CUSTOM CIRCULAR ABOUT IMAGE (2x LARGER, NO BORDERS) --- */
+			.spotlight .image.custom-profile-img {
+				width: 350px !important; /* Enlarged by roughly 2x */
+				height: 350px !important;
+				border: none !important; /* Removes template border */
+				background: transparent !important; /* Removes grey circle background */
+				box-shadow: none !important;
+				padding: 0 !important;
+				border-radius: 50% !important; /* Forces circular container */
+				overflow: hidden !important;
+				margin: 0 0 0 3em !important; /* Adds some breathing room between text and image */
+			}
+			.spotlight .image.custom-profile-img img {
+				width: 100% !important;
+				height: 100% !important;
+				object-fit: cover !important; /* Crops image cleanly into the circle */
+				border-radius: 50% !important; 
+			}
+
+			@media screen and (max-width: 980px) {
+				.spotlight .image.custom-profile-img {
+					width: 250px !important;
+					height: 250px !important;
+					margin: 2em auto !important; /* Centers image on mobile screens */
+				}
+			}
+			
 			@media screen and (max-width: 736px) {
 				.rri-block {
 					flex-direction: column;
@@ -41,7 +69,6 @@
 	<body class="is-preload">
 
 			<div id="wrapper">
-					<!-- UPDATED HEADER WITH NEW TEXT -->
 					<header id="header" class="alt">
 						<h1 class="site-title">Quantum Network and Sensing</h1>
 					</header>
@@ -69,7 +96,7 @@
 											and sensing. NeQsus Lab utilizes these engineered photon states to advance quantum networks, 
 											microscopy, and imaging.</p>
 									</div>
-									<span class="image"><img src="images/pic01.png" alt="NeQsus Lab Cover" loading="lazy" /></span>
+									<span class="image custom-profile-img"><img src="images/pic01.png" alt="NeQsus Lab Cover" loading="lazy" /></span>
 								</div>
 							</section>
 
