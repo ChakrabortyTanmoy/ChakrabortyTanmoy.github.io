@@ -4,59 +4,39 @@
 		<title>Research - NeQsus Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css?v=4" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* CSS to ensure left-side alignment for headings */
-			.align-left {
-				text-align: left !important;
-			}
-			/* This ensures the decorative line under the main header aligns to the left too */
-			header.major.align-left::after {
-				margin-left: 0 !important;
-			}
-
-			/* CSS for consistent image formatting */
+			.align-left { text-align: left !important; }
+			header.major.align-left::after { margin-left: 0 !important; }
 			.theme-image {
-				width: 80%; /* Visually reduced size by 50% */
+				width: 50%;
 				height: auto;
 				border-radius: 0.25em; 
 				box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 				margin-bottom: 2em;
 			}
-			
-			/* Forces the subheadings to be deep blue and removes the dotted underline */
 			.theme-title, .theme-title a {
 				color: #0033a0 !important;
 				border-bottom: none !important;
 				text-decoration: none !important;
 			}
-			
-			/* Tightened spacing between each research theme */
 			.research-theme-block {
-				margin-bottom: 2em; /* Reduced spacing */
+				margin-bottom: 2em;
 				align-items: center; 
 			}
-			
-			/* Removes the margin from the very last theme */
-			.research-theme-block:last-child {
-				margin-bottom: 0;
-			}
+			.research-theme-block:last-child { margin-bottom: 0; }
 		</style>
 	</head>
 	<body class="is-preload">
 
-		<div id="wrapper">
-
-				<header id="header" class="alt">
-						<div class="logo-container">
-							<img src="images/logo.png" alt="Lab Logo" class="logo-left" />
-							<img src="images/Name_research.png" alt="Research Logo" class="logo-right" />
-						</div>
-						<h1></h1>
+			<div id="wrapper">
+					<!-- UPDATED HEADER WITH NEW TEXT -->
+					<header id="header" class="alt">
+						<h1 class="site-title">Quantum Network and Sensing</h1>
 					</header>
 
-				<nav id="nav">
+					<nav id="nav">
 						<ul>
 							<li><a href="index.html">About</a></li>
 							<li><a href="research.html" class="active">Research</a></li>
@@ -67,12 +47,13 @@
 						</ul>
 					</nav>
 
-				<div id="main">
-
-						<section class="main">
+					<div id="main">
+							<section class="main">
 								<header class="major align-left">
 									<h2>Research themes</h2>
 								</header>
+
+								<img src="images/research_wheel.svg" alt="NeQsus Research Themes" style="width: 100%; max-width: 800px; display: block; margin: 0 auto 4em auto;" />
 
 								<div class="row research-theme-block">
 									<div class="col-6 col-12-medium">
@@ -123,18 +104,15 @@
 										<p>Atomic defect centers in diamond offer robust stationary qubits for advanced quantum processing. Applying precise optical and microwave pulses enables the high-fidelity initialization, coherent manipulation, and accurate readout of these highly stable spin states.</p>
 									</div>
 								</div>
-
 							</section>
-
 					</div>
 
-				<footer id="footer">
+					<footer id="footer">
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
-
 			</div>
 
-		<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
