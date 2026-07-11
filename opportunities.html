@@ -1,72 +1,97 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Opportunities - NeQsus Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Bumped version to v=12 to bypass cache -->
+		<link rel="stylesheet" href="assets/css/main.css?v=12" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.align-left { text-align: left !important; }
+			header.major.align-left::after { margin-left: 0 !important; }
+			
+			/* --- CUSTOM MODERN BULLETS FOR OPPORTUNITIES --- */
+			.modern-opportunities {
+				list-style: none; /* Removes standard browser bullets */
+				padding: 0;
+				margin: 1.5em 0 0 0;
+			}
+			.modern-opportunities li {
+				position: relative;
+				padding-left: 2.2em; /* Makes room for the custom bullet */
+				margin-bottom: 2em; /* Spacing between opportunities */
+				line-height: 1.7;
+				font-size: 1.05em;
+			}
+			/* Creates a sleek, blue square bullet */
+			.modern-opportunities li::before {
+				content: "■"; 
+				color: #0033a0;
+				position: absolute;
+				left: 0;
+				top: -2px;
+				font-size: 1.2em;
+			}
+			/* Clean link styling matching your other pages */
+			.opp-link {
+				color: #0033a0 !important;
+				text-decoration: none !important;
+				border-bottom: 1px dotted #0033a0 !important;
+				font-weight: 600;
+			}
+			.opp-link:hover {
+				color: #8a2be2 !important;
+				border-bottom-color: #8a2be2 !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
 			<div id="wrapper">
+					<!-- EXACT SAME HEADER AS THE OTHER TABS -->
+					<header id="header" class="alt">
+						<h1 class="site-title">Quantum Network and Sensing</h1>
+					</header>
 
-				<!-- Header -->
-<header id="header" class="alt">
-    <div class="logo-container">
-        <img src="images/logo.png" alt="Research Logo" class="logo-left" />
-        <img src="images/Name_research.png" alt="Lab Logo" class="logo-right" />
-    </div>
-    <h1></h1>
-</header>
-
-				<!-- Nav -->
+					<!-- NAVIGATION (Opportunities is active) -->
 					<nav id="nav">
-	<ul>
-		<li><a href="index.html">About</a></li>
-		<li><a href="research.html">Research</a></li>
-		<li><a href="publications.html">Publications</a></li>
-		<li><a href="team.html">Team</a></li>
-		<li><a href="news.html">Updates</a></li>
-		<li><a href="opportunities.html">Opportunities</a></li>
-	</ul>
-</nav>
+						<ul>
+							<li><a href="index.html">About</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="publications.html">Publications</a></li>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="news.html">Updates</a></li>
+							<li><a href="opportunities.html" class="active">Opportunities</a></li>
+						</ul>
+					</nav>
 
-				<!-- Main -->
 					<div id="main">
-							
-
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+							<section class="main">
+								<header class="major align-left">
+									<h2>Current Opportunities</h2>
 								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
 
+								<ul class="modern-opportunities">
+									<li>
+										Two Research Assistant positions are available to work on projects focused on the fundamental and applied aspects of quantum photonics. Please apply through the RRI website – details can be found <a href="https://www.rri.res.in/sites/default/files/other-openings/Advt_17_2026.pdf" target="_blank" class="opp-link">here</a>. Last date of application is 15th July 2026.
+									</li>
+									<li>
+										One postdoctoral position is available to work on quantum imaging project. If you have PhD in physics or related areas and have suitable expertise please contact the PI for further details.
+									</li>
+									<li>
+										One Junior Research Fellow (JRF) position is available to work on a quantum sensing project. Please contact the PI if you are interested.
+									</li>
+								</ul>
+
+							</section>
 					</div>
 
-				<!-- Footer -->
-	<footer id="footer">
-		<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-	</footer>
-
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
 			</div>
 
-		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
