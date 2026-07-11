@@ -4013,11 +4013,16 @@ body {
 }
 
 /* --- 2. FIX THIN FONT AND ENFORCE PROPER FONT FAMILY --- */
-/* This targets all regular text, making it a normal weight (400) instead of thin (300) */
+/* Apply the clean font family and normal weight to everything */
 body, p, a:not(.icon):not(.button), li, dt, dd, span:not(.icon):not(.image) {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: 400 !important; 
-    color: #333333 !important; /* Makes the text slightly darker and much easier to read */
+}
+
+/* ONLY apply the dark grey text color to standard paragraphs and lists. 
+   This protects your blue links and highlighted spans! */
+body, p, li, dt, dd {
+    color: #333333 !important; 
 }
 
 /* This makes your headings thicker and bolder */
