@@ -1,135 +1,101 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Research Theme - NeQsus Lab</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=17" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* --- CUSTOM FULL-WIDTH BANNER --- */
-			.theme-banner {
-				position: relative;
-				width: 100%;
-				height: 400px;
-				background-size: cover;
-				background-position: center;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				border-radius: 8px 8px 0 0; 
-				margin-bottom: 0;
-			}
-			
-			/* Dark overlay to make the white text pop */
-			.theme-banner::before {
-				content: '';
-				position: absolute;
-				top: 0; left: 0; right: 0; bottom: 0;
-				background: rgba(0, 0, 0, 0.55); 
-				border-radius: 8px 8px 0 0;
-			}
-			
-			/* Theme Title on the banner */
-			.theme-banner h1 {
-				position: relative;
-				color: #ffffff !important;
-				font-size: 2.5em;
-				font-weight: 600;
-				z-index: 1;
-				text-align: center;
-				padding: 0 1em;
-				margin: 0;
-			}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Research Theme - NeQsus Lab</title>
+	<meta name="description" content="Single photon sources: research at the Quantum Network and Sensing Lab." />
+	<meta name="theme-color" content="#10142e" />
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="stylesheet" href="assets/css/site.css?v=1" />
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-			/* --- BACK TO RESEARCH BUTTON (SMALL BOX) --- */
-			.back-box {
-				display: inline-block;
-				background-color: #f4f4f4;
-				color: #0033a0 !important;
-				padding: 8px 16px;
-				margin-bottom: 2em;
-				border-radius: 4px;
-				text-decoration: none !important;
-				border: 1px solid #ddd;
-				font-size: 0.9em;
-				font-weight: 600;
-				transition: background-color 0.2s ease;
-			}
-			.back-box:hover {
-				background-color: #e9e9e9;
-			}
+	<header class="site-header" data-header>
+		<div class="wrap nav-bar">
+			<a class="brand" href="index.html" aria-label="Quantum Network and Sensing, home">
+				<img src="images/logo-mark.png" alt="" width="46" height="30" />
+				<span>Quantum Network and Sensing</span>
+			</a>
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+				<span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+			</button>
+			<nav id="site-nav" class="site-nav" aria-label="Main">
+				<ul>
+				<li><a href="index.html">About</a></li>
+				<li><a href="research.html" aria-current="page">Research</a></li>
+				<li><a href="publications.html">Publications</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="news.html">Updates</a></li>
+				<li><a href="opportunities.html">Opportunities</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-			/* Clean up the main text area */
-			#main {
-				border-top-left-radius: 0;
-				border-top-right-radius: 0;
-			}
-			
-			.align-left { text-align: left !important; }
-			
-			@media screen and (max-width: 736px) {
-				.theme-banner { height: 250px; }
-				.theme-banner h1 { font-size: 1.8em; }
-			}
-		</style>
-	</head>
-	<body class="is-preload">
-
-			<div id="wrapper">
-			
-					<header class="theme-banner" style="background-image: url('images/Photon_sources.png');">
-						<h1>Single photon sources</h1>
-					</header>
-
-					<div id="main">
-							<section class="main align-left">
-								
-								<a href="research.html" class="back-box">← Back to Research</a>
-								
-								<p style="font-size: 1.1em; line-height: 1.8;">
-									Quantum networks rely on the reliable generation, transmission, and detection of single photons to 
-									distribute quantum information between distant nodes. Single-photon sources are therefore a central building 
-									block for applications such as quantum key distribution, quantum repeaters, and distributed quantum computing. 
-									A useful source emits photons on demand, with low multi-photon probability, high photon indistinguishability, 
-									and high generation efficiency, while operating at wavelengths compatible with low-loss transmission through 
-									optical fiber or free space. Solid-state platforms are a practical route toward such sources, since they allow 
-									direct, chip-scale integration with existing photonic and electronic fabrication techniques, support compact 
-									device geometries, and can be engineered to emit at telecom-compatible wavelengths. 
-									Two solid-state approaches have received particular attention in this context: sources based on nonlinear 
-									optical processes and sources based on atomic-scale defect centers in solid materials.
-
-Our group investigates both classes of solid-state single-photon sources. In the nonlinear optics approach, we use processes 
-									such as spontaneous parametric down-conversion and four-wave mixing in engineered photonic structures to 
-									generate correlated and heralded single photons. In the defect-center approach, we study point defects in 
-									wide-bandgap materials, including nitrogen-vacancy and related centers in diamond and silicon carbide, 
-									which act as solid-state quantum emitters with well-defined optical transitions. For each platform, 
-									we characterize photon statistics, emission efficiency, and spectral properties, and assess how these 
-									properties translate into performance in quantum network settings.
-
-A specific focus of our current work is multiplexing: combining multiple probabilistic or independent photon sources, across time, 
-									frequency, or spatial modes, to increase the effective single-photon generation rate. 
-									We study multiplexing schemes for both nonlinear and defect-center sources, including their compatibility
-									with active optical switching, synchronization requirements, and integration with waveguide circuits. 
-									This work aims to identify practical strategies for scaling solid-state single-photon sources toward the 
-									generation rates and fidelities required for functional quantum network implementations.
-								</p>
-								
-							</section>
-					</div>
-
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+	<main id="main">
+		<section class="theme-head">
+			<div class="wrap theme-head-grid">
+				<div>
+					<a class="back-link" href="research.html">&larr; Back to Research</a>
+					<h1>Single photon sources</h1>
+				</div>
+				<figure><img src="images/Photon_sources.png" alt="Single photon sources" width="768" height="512" /></figure>
 			</div>
+		</section>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<section class="section">
+			<div class="wrap">
+				<div class="prose">
+					<p>Quantum networks rely on the reliable generation, transmission, and detection of single photons to distribute quantum information between distant nodes. Single-photon sources are therefore a central building block for applications such as quantum key distribution, quantum repeaters, and distributed quantum computing. A useful source emits photons on demand, with low multi-photon probability, high photon indistinguishability, and high generation efficiency, while operating at wavelengths compatible with low-loss transmission through optical fiber or free space. Solid-state platforms are a practical route toward such sources, since they allow direct, chip-scale integration with existing photonic and electronic fabrication techniques, support compact device geometries, and can be engineered to emit at telecom-compatible wavelengths. Two solid-state approaches have received particular attention in this context: sources based on nonlinear optical processes and sources based on atomic-scale defect centers in solid materials.</p>
+					<p>Our group investigates both classes of solid-state single-photon sources. In the nonlinear optics approach, we use processes such as spontaneous parametric down-conversion and four-wave mixing in engineered photonic structures to generate correlated and heralded single photons. In the defect-center approach, we study point defects in wide-bandgap materials, including nitrogen-vacancy and related centers in diamond and silicon carbide, which act as solid-state quantum emitters with well-defined optical transitions. For each platform, we characterize photon statistics, emission efficiency, and spectral properties, and assess how these properties translate into performance in quantum network settings.</p>
+					<p>A specific focus of our current work is multiplexing: combining multiple probabilistic or independent photon sources, across time, frequency, or spatial modes, to increase the effective single-photon generation rate. We study multiplexing schemes for both nonlinear and defect-center sources, including their compatibility with active optical switching, synchronization requirements, and integration with waveguide circuits. This work aims to identify practical strategies for scaling solid-state single-photon sources toward the generation rates and fidelities required for functional quantum network implementations.</p>
+				</div>
+				<nav class="more-themes" aria-label="Research themes">
+					<h2>More research themes</h2>
+					<ul>
+					<li><a href="quantum-memory.html"><img src="images/Q_memory.png" alt="" width="768" height="512" loading="lazy" />Quantum memory based on rare earth ions</a></li>
+					<li><a href="quantum-imaging.html"><img src="images/Imaging_metrology.png" alt="" width="768" height="512" loading="lazy" />Quantum imaging and metrology</a></li>
+					<li><a href="hybrid-network.html"><img src="images/Hybrid_network.png" alt="" width="768" height="512" loading="lazy" />Hybrid quantum network</a></li>
+					<li><a href="defect-diamond.html"><img src="images/defect_diamond.png" alt="" width="768" height="512" loading="lazy" />Atomic defect centers in diamond</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+	</main>
 
-	</body>
+	<footer class="site-footer">
+		<div class="wrap footer-grid">
+			<div>
+				<img class="footer-logo" src="images/logo.png" alt="NeQsus Lab" width="130" height="110" loading="lazy" />
+			</div>
+			<div>
+				<h2 class="footer-h">Address</h2>
+				<p>Light and Matter Physics Division<br />Raman Research Institute<br />C. V. Raman Avenue, Sadashivanagar<br />Bengaluru - 560 080 India</p>
+			</div>
+			<div>
+				<h2 class="footer-h">Email</h2>
+				<p><a href="mailto:tanmoy@rri.res.in">tanmoy@rri.res.in</a></p>
+			</div>
+			<nav aria-label="Footer">
+				<h2 class="footer-h">Pages</h2>
+				<ul class="footer-links">
+					<li><a href="index.html">About</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="news.html">Updates</a></li>
+					<li><a href="opportunities.html">Opportunities</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="wrap footer-base">
+			<p>&copy; <span data-year>2026</span> Quantum Network and Sensing Lab, Raman Research Institute, Bengaluru</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/site.js?v=1"></script>
+</body>
 </html>

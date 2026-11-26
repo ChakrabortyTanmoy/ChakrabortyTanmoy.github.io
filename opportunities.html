@@ -1,104 +1,89 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Opportunities - NeQsus Lab</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- Bumped version to v=12 to bypass cache -->
-		<link rel="stylesheet" href="assets/css/main.css?v=12" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.align-left { text-align: left !important; }
-			header.major.align-left::after { margin-left: 0 !important; }
-			
-			/* --- CUSTOM MODERN BULLETS FOR OPPORTUNITIES --- */
-			.modern-opportunities {
-				list-style: none; /* Removes standard browser bullets */
-				padding: 0;
-				margin: 1.5em 0 0 0;
-			}
-			.modern-opportunities li {
-				position: relative;
-				padding-left: 2.2em; /* Makes room for the custom bullet */
-				margin-bottom: 2em; /* Spacing between opportunities */
-				line-height: 1.7;
-				font-size: 1.05em;
-			}
-			/* Creates a sleek, blue square bullet */
-			.modern-opportunities li::before {
-				content: "■"; 
-				color: #0033a0;
-				position: absolute;
-				left: 0;
-				top: -2px;
-				font-size: 1.2em;
-			}
-			/* Clean link styling matching your other pages */
-			.opp-link {
-				color: #0033a0 !important;
-				text-decoration: none !important;
-				border-bottom: 1px dotted #0033a0 !important;
-				font-weight: 600;
-			}
-			.opp-link:hover {
-				color: #8a2be2 !important;
-				border-bottom-color: #8a2be2 !important;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Opportunities - NeQsus Lab</title>
+	<meta name="description" content="Open positions in the Quantum Network and Sensing Lab, Raman Research Institute." />
+	<meta name="theme-color" content="#10142e" />
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="stylesheet" href="assets/css/site.css?v=1" />
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-			<div id="wrapper">
-					<!-- EXACT SAME HEADER AS THE OTHER TABS -->
-					<header id="header" class="alt">
-						<h1 class="site-title">Quantum Network and Sensing</h1>
-					</header>
+	<header class="site-header" data-header>
+		<div class="wrap nav-bar">
+			<a class="brand" href="index.html" aria-label="Quantum Network and Sensing, home">
+				<img src="images/logo-mark.png" alt="" width="46" height="30" />
+				<span>Quantum Network and Sensing</span>
+			</a>
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+				<span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+			</button>
+			<nav id="site-nav" class="site-nav" aria-label="Main">
+				<ul>
+				<li><a href="index.html">About</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="publications.html">Publications</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="news.html">Updates</a></li>
+				<li><a href="opportunities.html" aria-current="page">Opportunities</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-					<!-- NAVIGATION (Opportunities is active) -->
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">About</a></li>
-							<li><a href="research.html">Research</a></li>
-							<li><a href="publications.html">Publications</a></li>
-							<li><a href="team.html">Team</a></li>
-							<li><a href="news.html">Updates</a></li>
-							<li><a href="opportunities.html" class="active">Opportunities</a></li>
-						</ul>
-					</nav>
-
-					<div id="main">
-							<section class="main">
-								<header class="major align-left">
-									<h2>Current Opportunities</h2>
-								</header>
-
-								<ul class="modern-opportunities">
-									<li>
-										Two Research Assistant positions are available to work on projects focused on the fundamental and applied aspects of quantum photonics. Please apply through the RRI website – details can be found <a href="https://www.rri.res.in/sites/default/files/other-openings/Advt_17_2026.pdf" target="_blank" class="opp-link">here</a>. Last date of application is 15th July 2026.
-									</li>
-									<li>
-										One postdoctoral position is available to work on quantum imaging project. If you have a PhD in physics or related areas and have suitable expertise please contact the PI for further details.
-									</li>
-									<li>
-										One Junior Research Fellow (JRF) position is available to work on a quantum sensing project. Please contact the PI if you are interested.
-									</li>
-								</ul>
-
-							</section>
-					</div>
-
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+	<main id="main">
+		<section class="page-head">
+			<canvas class="fringes" data-fringes="still" data-brightness="0.85" aria-hidden="true"></canvas>
+			<div class="wrap page-head-inner">
+				<h1>Current Opportunities</h1>
 			</div>
+		</section>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<section class="section">
+			<div class="wrap">
+				<ul class="openings">
+					<li>Two Research Assistant positions are available to work on projects focused on the fundamental and applied aspects of quantum photonics. Please apply through the RRI website – details can be found <a href="https://www.rri.res.in/sites/default/files/other-openings/Advt_17_2026.pdf" rel="noopener" target="_blank">here</a>. Last date of application is 15th July 2026.</li>
+					<li>One postdoctoral position is available to work on quantum imaging project. If you have a PhD in physics or related areas and have suitable expertise please contact the PI for further details.</li>
+					<li>One Junior Research Fellow (JRF) position is available to work on a quantum sensing project. Please contact the PI if you are interested.</li>
+				</ul>
+			</div>
+		</section>
+	</main>
 
-	</body>
+	<footer class="site-footer">
+		<div class="wrap footer-grid">
+			<div>
+				<img class="footer-logo" src="images/logo.png" alt="NeQsus Lab" width="130" height="110" loading="lazy" />
+			</div>
+			<div>
+				<h2 class="footer-h">Address</h2>
+				<p>Light and Matter Physics Division<br />Raman Research Institute<br />C. V. Raman Avenue, Sadashivanagar<br />Bengaluru - 560 080 India</p>
+			</div>
+			<div>
+				<h2 class="footer-h">Email</h2>
+				<p><a href="mailto:tanmoy@rri.res.in">tanmoy@rri.res.in</a></p>
+			</div>
+			<nav aria-label="Footer">
+				<h2 class="footer-h">Pages</h2>
+				<ul class="footer-links">
+					<li><a href="index.html">About</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="news.html">Updates</a></li>
+					<li><a href="opportunities.html">Opportunities</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="wrap footer-base">
+			<p>&copy; <span data-year>2026</span> Quantum Network and Sensing Lab, Raman Research Institute, Bengaluru</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/site.js?v=1"></script>
+</body>
 </html>

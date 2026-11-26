@@ -1,60 +1,87 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Updates - NeQsus Lab</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- Bumped version to v=13 to bypass cache -->
-		<link rel="stylesheet" href="assets/css/main.css?v=13" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.align-left { text-align: left !important; }
-			header.major.align-left::after { margin-left: 0 !important; }
-		</style>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Updates - NeQsus Lab</title>
+	<meta name="description" content="News and updates from the Quantum Network and Sensing Lab." />
+	<meta name="theme-color" content="#10142e" />
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="stylesheet" href="assets/css/site.css?v=1" />
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-			<div id="wrapper">
-					<!-- EXACT SAME HEADER AS THE OTHER TABS -->
-					<header id="header" class="alt">
-						<h1 class="site-title">Quantum Network and Sensing</h1>
-					</header>
+	<header class="site-header" data-header>
+		<div class="wrap nav-bar">
+			<a class="brand" href="index.html" aria-label="Quantum Network and Sensing, home">
+				<img src="images/logo-mark.png" alt="" width="46" height="30" />
+				<span>Quantum Network and Sensing</span>
+			</a>
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+				<span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+			</button>
+			<nav id="site-nav" class="site-nav" aria-label="Main">
+				<ul>
+				<li><a href="index.html">About</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="publications.html">Publications</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="news.html" aria-current="page">Updates</a></li>
+				<li><a href="opportunities.html">Opportunities</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-					<!-- NAVIGATION (Updates is active) -->
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">About</a></li>
-							<li><a href="research.html">Research</a></li>
-							<li><a href="publications.html">Publications</a></li>
-							<li><a href="team.html">Team</a></li>
-							<li><a href="news.html" class="active">Updates</a></li>
-							<li><a href="opportunities.html">Opportunities</a></li>
-						</ul>
-					</nav>
-
-					<div id="main">
-							<section class="main">
-								<header class="major align-left">
-									<h2>Updates</h2>
-								</header>
-								
-								<p>Updates will be updated soon..</p>
-								
-							</section>
-					</div>
-
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+	<main id="main">
+		<section class="page-head">
+			<canvas class="fringes" data-fringes="still" data-brightness="0.85" aria-hidden="true"></canvas>
+			<div class="wrap page-head-inner">
+				<h1>Updates</h1>
 			</div>
+		</section>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<section class="section">
+			<div class="wrap">
+				<div class="timeline">
+					<div class="timeline-item"><p>Updates will be updated soon..</p></div>
+				</div>
+			</div>
+		</section>
+	</main>
 
-	</body>
+	<footer class="site-footer">
+		<div class="wrap footer-grid">
+			<div>
+				<img class="footer-logo" src="images/logo.png" alt="NeQsus Lab" width="130" height="110" loading="lazy" />
+			</div>
+			<div>
+				<h2 class="footer-h">Address</h2>
+				<p>Light and Matter Physics Division<br />Raman Research Institute<br />C. V. Raman Avenue, Sadashivanagar<br />Bengaluru - 560 080 India</p>
+			</div>
+			<div>
+				<h2 class="footer-h">Email</h2>
+				<p><a href="mailto:tanmoy@rri.res.in">tanmoy@rri.res.in</a></p>
+			</div>
+			<nav aria-label="Footer">
+				<h2 class="footer-h">Pages</h2>
+				<ul class="footer-links">
+					<li><a href="index.html">About</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="news.html">Updates</a></li>
+					<li><a href="opportunities.html">Opportunities</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="wrap footer-base">
+			<p>&copy; <span data-year>2026</span> Quantum Network and Sensing Lab, Raman Research Institute, Bengaluru</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/site.js?v=1"></script>
+</body>
 </html>

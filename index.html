@@ -1,160 +1,124 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>About - NeQsus Lab</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- Bumped version to v=18 to bypass cache -->
-		<link rel="stylesheet" href="assets/css/main.css?v=18" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.rri-block {
-				display: flex;
-				gap: 2em;
-				align-items: flex-start;
-			}
-			.rri-logo {
-				width: 70px;
-				flex-shrink: 0;
-				margin-top: 0.5em;
-			}
-			.email-link {
-				color: #0033a0 !important;
-				text-decoration: none !important;
-				border-bottom: none !important;
-				font-weight: normal !important;
-			}
-			.email-link:hover {
-				color: #8a2be2 !important;
-			}
-			
-			/* --- CUSTOM CIRCULAR ABOUT IMAGE --- */
-			.spotlight .image.custom-profile-img {
-				width: 490px !important;  
-				height: 490px !important; 
-				border: none !important; 
-				background: transparent !important; 
-				box-shadow: none !important;
-				padding: 0 !important;
-				border-radius: 50% !important; 
-				overflow: hidden !important;
-				margin: 0 0 0 3em !important; 
-				flex-shrink: 0 !important; 
-			}
-			.spotlight .image.custom-profile-img img {
-				width: 100% !important;
-				height: 100% !important;
-				object-fit: cover !important; 
-				border-radius: 50% !important; 
-			}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>About - NeQsus Lab</title>
+	<meta name="description" content="Quantum optics studies light at its fundamental limit. By controlling and detecting individual photons, we can harness quantum entanglement to drive new technologies in secure communication, computing, and sensing. The Quantum Network and Sensing Lab utilizes these engineered photon states to advance quantum networks, microscopy, and imaging." />
+	<meta name="theme-color" content="#10142e" />
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="stylesheet" href="assets/css/site.css?v=1" />
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-			@media screen and (max-width: 980px) {
-				.spotlight .image.custom-profile-img {
-					width: 350px !important;  
-					height: 350px !important; 
-					margin: 2em auto !important; 
-					max-width: 90vw !important; 
-					max-height: 90vw !important;
-				}
-			}
-			
-			@media screen and (max-width: 736px) {
-				.rri-block {
-					flex-direction: column;
-					align-items: center;
-					text-align: center;
-				}
-				.rri-logo {
-					margin-bottom: 1em;
-				}
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+	<header class="site-header" data-header>
+		<div class="wrap nav-bar">
+			<a class="brand" href="index.html" aria-label="Quantum Network and Sensing, home">
+				<img src="images/logo-mark.png" alt="" width="46" height="30" />
+				<span>Quantum Network and Sensing</span>
+			</a>
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+				<span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+			</button>
+			<nav id="site-nav" class="site-nav" aria-label="Main">
+				<ul>
+				<li><a href="index.html" aria-current="page">About</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="publications.html">Publications</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="news.html">Updates</a></li>
+				<li><a href="opportunities.html">Opportunities</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-			<div id="wrapper">
-					<header id="header" class="alt">
-						<h1 class="site-title">Quantum Network and Sensing</h1>
-					</header>
-
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html" class="active">About</a></li>
-							<li><a href="research.html">Research</a></li>
-							<li><a href="publications.html">Publications</a></li>
-							<li><a href="team.html">Team</a></li>
-							<li><a href="news.html">Updates</a></li>
-							<li><a href="opportunities.html">Opportunities</a></li>
-						</ul>
-					</nav>
-
-					<div id="main">
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>About Quantum Network and Sensing Lab</h2>
-										</header>
-										<p>Quantum optics studies light at its fundamental limit. By controlling and detecting individual photons, 
-											we can harness quantum entanglement to drive new technologies in secure communication, computing, 
-											and sensing. The Quantum Network and Sensing Lab utilizes these engineered photon states to advance quantum networks, 
-											microscopy, and imaging.</p>
-									</div>
-									<span class="image custom-profile-img"><img src="images/pic01.jpeg" alt="NeQsus Lab Cover" loading="lazy" /></span>
-								</div>
-							</section>
-
-							<section class="main">
-								<div class="row">
-									<div class="col-6 col-12-medium">
-										<div class="rri-block">
-											<img src="images/RRI_Logo.png" alt="RRI Logo" class="rri-logo" />
-											<div>
-												<header class="major">
-													<h2 style="font-size: calc(1.75em - 2pt);">We are in RRI Bengaluru</h2>
-												</header>
-												<p>The Raman Research Institute (RRI), an autonomous institute funded by the Government of India, is a premier center dedicated to research in the basic sciences. Further information about the Institute, its research areas, and other details may be found through the link below.</p>
-												<ul class="actions">
-													<li><a href="https://www.rri.res.in/" target="_blank" class="button">More</a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									
-									<div class="col-6 col-12-medium">
-										<header class="major">
-											<h2 style="font-size: calc(1.75em - 2pt);">Contact us</h2>
-										</header>
-										<p style="margin-top: -1em; margin-bottom: 1.5em; line-height: 1.6;">
-											<!-- Applied the dark text color here to override the template's default bold color -->
-											<strong style="color: #333333;">Dr. Tanmoy Chakraborty,</strong><br />
-											Associate Professor,<br />
-											Light and Matter Physics Division,<br />
-											Raman Research Institute,
-										</p>
-										<dl class="alt">
-											<dt>Address</dt>
-											<dd>C. V. Raman Avenue, Sadashivanagar,<br />Bengaluru - 560 080 India.</dd>
-											<dt>Email</dt>
-											<dd><a href="mailto:tanmoy@rri.res.in" class="email-link">tanmoy@rri.res.in</a></dd>
-										</dl>
-									</div>
-								</div>
-							</section>
-					</div>
-
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+	<main id="main">
+		<section class="hero">
+			<canvas class="fringes" data-fringes="live" aria-hidden="true"></canvas>
+			<div class="wrap hero-inner">
+				<h1>Quantum Network and Sensing</h1>
+				<p class="hero-sub">Light and Matter Physics Division, Raman Research Institute, Bengaluru</p>
+				<div class="hero-actions">
+					<a class="btn btn-light" href="research.html">Explore our research</a>
+					<a class="btn btn-outline" href="opportunities.html">See open positions</a>
+				</div>
 			</div>
+			<p class="hero-legend">Two coherent point sources interfering. Move your pointer to shift one of them.</p>
+		</section>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<section class="section">
+			<div class="wrap about">
+				<div>
+					<h2>About Quantum Network and Sensing Lab</h2>
+					<p class="lead">Quantum optics studies light at its fundamental limit. By controlling and detecting individual photons, we can harness quantum entanglement to drive new technologies in secure communication, computing, and sensing. The Quantum Network and Sensing Lab utilizes these engineered photon states to advance quantum networks, microscopy, and imaging.</p>
+				</div>
+				<div class="ringed">
+					<img src="images/pic01.jpeg" alt="Green laser beams on an optical table in the lab" width="1054" height="987" />
+				</div>
+			</div>
+		</section>
 
-	</body>
+		<section class="section">
+			<div class="wrap">
+				<div class="split">
+				<div>
+					<div class="institute">
+						<img class="institute-logo" src="images/RRI_Logo.png" alt="Raman Research Institute logo" width="64" height="120" loading="lazy" />
+						<div>
+							<h2>We are in RRI Bengaluru</h2>
+							<p>The Raman Research Institute (RRI), an autonomous institute funded by the Government of India, is a premier center dedicated to research in the basic sciences. Further information about the Institute, its research areas, and other details may be found through the link below.</p>
+							<a class="btn btn-solid" href="https://www.rri.res.in/" target="_blank" rel="noopener">More</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<h2>Contact us</h2>
+					<p class="contact-name"><strong>Dr. Tanmoy Chakraborty,</strong><br />Associate Professor,<br />Light and Matter Physics Division,<br />Raman Research Institute,</p>
+					<dl class="contact-list">
+						<dt>Address</dt>
+						<dd>C. V. Raman Avenue, Sadashivanagar,<br />Bengaluru - 560 080 India.</dd>
+						<dt>Email</dt>
+						<dd><a href="mailto:tanmoy@rri.res.in">tanmoy@rri.res.in</a></dd>
+					</dl>
+				</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="wrap footer-grid">
+			<div>
+				<img class="footer-logo" src="images/logo.png" alt="NeQsus Lab" width="130" height="110" loading="lazy" />
+			</div>
+			<div>
+				<h2 class="footer-h">Address</h2>
+				<p>Light and Matter Physics Division<br />Raman Research Institute<br />C. V. Raman Avenue, Sadashivanagar<br />Bengaluru - 560 080 India</p>
+			</div>
+			<div>
+				<h2 class="footer-h">Email</h2>
+				<p><a href="mailto:tanmoy@rri.res.in">tanmoy@rri.res.in</a></p>
+			</div>
+			<nav aria-label="Footer">
+				<h2 class="footer-h">Pages</h2>
+				<ul class="footer-links">
+					<li><a href="index.html">About</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="news.html">Updates</a></li>
+					<li><a href="opportunities.html">Opportunities</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="wrap footer-base">
+			<p>&copy; <span data-year>2026</span> Quantum Network and Sensing Lab, Raman Research Institute, Bengaluru</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/site.js?v=1"></script>
+</body>
 </html>
